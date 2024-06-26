@@ -1,0 +1,13 @@
+D:\school\Code\practice\KMTLoaningCompany\obj\Debug\net7.0\KMTLoaningCompany.GeneratedMSBuildEditorConfig.editorconfig
+D:\school\Code\practice\KMTLoaningCompany\obj\Debug\net7.0\KMTLoaningCompany.csproj.CoreCompileInputs.cache
+D:\school\Code\practice\KMTLoaningCompany\bin\Debug\net7.0\KMTLoaningCompany.exe
+D:\school\Code\practice\KMTLoaningCompany\bin\Debug\net7.0\KMTLoaningCompany.dll.config
+D:\school\Code\practice\KMTLoaningCompany\bin\Debug\net7.0\KMTLoaningCompany.deps.json
+D:\school\Code\practice\KMTLoaningCompany\bin\Debug\net7.0\KMTLoaningCompany.runtimeconfig.json
+D:\school\Code\practice\KMTLoaningCompany\bin\Debug\net7.0\KMTLoaningCompany.dll
+D:\school\Code\practice\KMTLoaningCompany\bin\Debug\net7.0\KMTLoaningCompany.pdb
+D:\school\Code\practice\KMTLoaningCompany\obj\Debug\net7.0\KMTLoaningCompany.dll
+D:\school\Code\practice\KMTLoaningCompany\obj\Debug\net7.0\refint\KMTLoaningCompany.dll
+D:\school\Code\practice\KMTLoaningCompany\obj\Debug\net7.0\KMTLoaningCompany.pdb
+D:\school\Code\practice\KMTLoaningCompany\obj\Debug\net7.0\KMTLoaningCompany.genruntimeconfig.cache
+D:\school\Code\practice\KMTLoaningCompany\obj\Debug\net7.0\ref\KMTLoaningCompany.dll

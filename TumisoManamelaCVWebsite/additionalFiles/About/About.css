@@ -1,0 +1,271 @@
+body{
+    background: #f2f2f2;
+    margin:0;
+    width: 100%;
+    height: 10vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+   }
+html{
+    height:10vh
+}
+
+   ul{
+    
+    display: inline;
+    padding: 10%;
+    
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    padding: 5vh;
+    font-size: 1.7vh;
+    font-family: Arial, sans-serif;
+    
+}
+
+ul{
+    
+    display: inline;
+    padding: 10%;
+    
+    
+}
+
+.links{
+    grid-area:links;
+    background: #f2f2f2;
+    align-items: center;
+}
+
+
+.cornerItems{
+    text-align: right;
+    position: absolute;
+    top:3%;
+    /* right:3vh; */
+    /* right:3.77%; */
+    right:5.8vh;
+    width: 80vh;
+    animation: headerAnimations 2s ease-in-out, opacitying 2s ease-in;
+  
+}
+
+.fullName{
+    position: absolute;
+    top:3%;
+    left: 5%;
+    font-size: 1.7vh;
+    font-family: Arial, sans-serif;
+    animation: opacitying 2s ease-in;
+}
+
+.aboutL{
+    color: #78bbeb;
+}
+
+@keyframes opacitying{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/*Shapes*/
+.t1{
+    position: absolute;
+    top: 33vh;
+    left: -6vh;
+    width: 0;
+    height: 0;
+    border-left: 40vh solid transparent;
+    border-right: 40vh solid transparent;
+    border-bottom: 60vh solid #78bbeb;
+    transform: rotate(180deg);
+    animation: opacitying 2s ease-in;
+}
+
+.t2{
+    position: absolute;
+    top: 43vh;
+    left: 26vh;
+    width: 0;
+    height: 0;
+    border-left: 50vh solid transparent;
+    border-right: 50vh solid transparent;
+    border-bottom: 90vh solid #4193ce;
+    transform: rotate(152deg);
+    animation: triangleRoll 3s ease-in-out, opacitying 3s ease-in;
+    
+}
+
+.t3{
+    position: absolute;
+    top: 65vh;
+    left: 46vh;
+    width: 0;
+    height: 0;
+    border-left: 15vh solid transparent;
+    border-right: 15vh solid transparent;
+    border-bottom: 25vh solid #78bbeb;
+    transform: rotate(130deg);
+    animation: triangleRollBottom 4s ease-in-out, opacitying 4s ease-in;
+    
+
+}
+
+.t4{
+    position: absolute;
+    top: 13vh;
+    left: 5vh;
+    width: 0;
+    height: 0;
+    border-left: 15vh solid transparent;
+    border-right: 15vh solid transparent;
+    border-bottom: 28vh solid #4193ce;
+    transform: rotate(-48deg);  
+    animation: triangleRoll 2s ease-in-out, opacitying 2s ease-in;
+    
+
+}
+
+.aboutMeHeading{
+    position: absolute;
+    top:23vh;
+    left: 125vh;
+    width: 60%;
+    font-size: 5vh;
+    font-family:Arial, sans-serif;
+    animation: fromRight 2s ease-in-out,opacitying 2s ease-in;
+}
+
+.aboutMePara{
+    position: relative;
+    top: 33vh;
+    left: 125vh;
+    width: 40vh;
+    font-size: 1.9vh;
+    font-family:Arial, sans-serif;
+    animation: fromRight 2s ease-in-out,opacitying 2s ease-in;
+}
+
+.skills{
+    position: absolute;
+    top:51vh;
+    left: 110vh;
+    width: 60%;
+    font-size: 5vh;
+    font-family:Arial, sans-serif;
+    animation: fromBottom 2s ease-in-out, opacitying 2s ease-in;
+}
+
+.skillsPara{
+    position: relative;
+    top: 50vh;
+    left: 110vh;
+    width: 40vh;
+    font-size: 1.9vh;
+    font-family:Arial, sans-serif;
+    animation: fromBottom 2s ease-in-out, opacitying 2s ease-in;
+}
+
+.icons{
+    position: absolute;
+    left: 110vh;
+    top: 85vh;
+    display: flex;
+    gap: 2vh;
+    animation: fromLeft 2s ease-in-out, opacitying 2s ease-in;
+}
+
+img{
+    width: 7vh;
+}
+
+@keyframes triangleRoll{
+    from{
+        transform: translateY(-100px) rotate(-270deg);
+    }
+    to{
+        transform: translateY(0) (0deg);
+    }
+    
+}
+
+@keyframes triangleRollLeft{
+    from{
+        transform: translateX(-100px) rotate(270deg);
+    }
+    to{
+        transform: translateX(0) (0deg);
+    }
+    
+}
+
+@keyframes triangleRollBottom{
+    from{
+        transform: translateY(100px) rotate(270deg);
+    }
+    to{
+        transform: translateY(0) (0deg);
+    }
+    
+}
+
+
+@keyframes headerAnimations{
+    from{
+        transform: translateY(-50px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes fromLeft{
+    from{
+        transform: translateX(-150px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes fromBottom{
+    from{
+        transform: translateY(50px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes grow{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
+
+@keyframes fromRight{
+    from{
+        transform: translateX(150px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+
+
+

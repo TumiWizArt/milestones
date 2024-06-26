@@ -1,0 +1,282 @@
+body{
+    background: #f2f2f2;
+    margin:0;
+    width: 100%;
+    height: 10vh;
+    overflow-x: hidden;
+   }
+html{
+    height:10vh
+}
+
+   ul{
+    
+    display: inline;
+    padding: 10%;
+    
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    padding: 5vh;
+    font-size: 1.7vh;
+    font-family: Arial, sans-serif;
+    
+}
+
+ul{
+    
+    display: inline;
+    padding: 10%;
+    
+    
+}
+
+.links{
+    grid-area:links;
+    background: #f2f2f2;
+    align-items: center;
+}
+
+
+.cornerItems{
+    text-align: right;
+    position: absolute;
+    top:3%;
+    right:3%;
+    width: 80vh;
+    animation: opacitying 1s ease-in;
+  
+}
+
+.fullName{
+    position: absolute;
+    top:3%;
+    left: 5%;
+    font-size: 1.7vh;
+    font-family: Arial, sans-serif;
+    animation: opacitying 2s ease-in;
+}
+
+.portfolioL{
+    color: #78bbeb;
+}
+
+.milestone{
+    position: absolute;
+    left: 85vh;
+    top: 14vh;
+    font-size: 5vh;
+    font-family:Arial, sans-serif;
+    animation: opacitying 2s ease-in;
+}
+
+
+@keyframes opacitying{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes changeColor{
+    from{
+        background: rgb(255, 255, 255, 0);
+    }
+    to{
+        background: rgb(168, 216, 236, 0.2);
+    }
+}
+
+@keyframes upAnimation{
+    from{
+        transform: translate(-80px, 180px) rotate(26deg);
+    }
+
+    to{
+        transform: translate(0) rotate(26deg);
+    }
+}
+
+@keyframes downAnimation{
+    from{ 
+        transform: translate(-200px, 55px) rotate(72deg);
+    }
+    to{
+        transform: translate(0) rotate(72deg);
+    }
+}
+
+@keyframes up2{
+    from{
+        transform: translate(40px, 180px) rotate(-15deg);
+    }
+    to{
+        transform: translate(0) rotate(-15deg);
+    }
+}
+
+
+.card:hover{
+    animation: changeColor 0.5s ease-in;
+    background: rgb(168, 216, 236, 0.2);
+}
+
+
+
+
+#milestoneContainer{
+    background:rgb(255, 255, 255, 0);
+    position: absolute;
+    top: 24vh;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    gap: 3vh;
+    animation: opacitying 2s ease-in;
+    
+}
+
+
+#milestoneContainer2{
+    background:rgb(255, 255, 255, 0);
+    position: absolute;
+    top: 75vh;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    gap: 3vh;
+    animation: opacitying 2s ease-in;
+    
+}
+
+.card{
+    
+    background: rgb(255, 255, 255, 0);
+    width: 50vh;
+    height: 50vh;
+    /* border-radius: 10%; */
+}
+
+.videoSlot{
+    position: relative;
+    left:10% ;
+    top: 10%;
+    width: 80%;
+    height: 50%;
+    background: rgb(255, 255, 255, 0);
+}
+
+.milestoneName{
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    font-size: 3vh;
+    font-family:Arial, sans-serif;
+    text-shadow: 1vh 1vh 1vh rgb(142, 142, 142);
+}
+
+.projectDetails{
+    position: relative;
+    top: 9%;
+    left: 10%;
+    width: 80%;
+    font-size: 1.5vh;
+    font-family:Arial, sans-serif;
+}
+
+/*lines*/
+.blueLine1{
+    position: absolute;
+    background: #78bbeb;
+    width: 25vh;
+    height: 80vh;
+    transform: rotate(26deg);
+    left: 90vh;
+    top:10vh;
+    animation: upAnimation 3s ease-in-out;
+}
+
+.blueLine2{
+    position: absolute;
+    background: #4193ce;
+    width: 59vh;
+    height: 250vh;
+    transform: rotate(72deg);
+    left: 58vh;
+    top:-31vh;
+    animation: downAnimation 2s ease-in-out;
+}
+
+.blueLine3{
+    position: absolute;
+    background: #78bbeb;
+    width: 58vh;
+    height: 60vh;
+    transform: rotate(-15deg);
+    left: 142vh;
+    top:90vh;
+    animation: up2 2s ease-in-out;
+}
+
+.footer{
+    position: absolute;
+    background: #347db2;
+    width: 210vh;
+    height: 30vh;
+    top:134vh;
+    overflow-y: hidden;
+}
+
+#blenderCar{
+    color:#f2f2f2;
+}
+
+#blenderAnimation{
+    color:#f2f2f2;
+}
+#unityMovement{
+    color: #f2f2f2;
+}
+
+#animH{
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    font-size: 3vh;
+    font-family:Arial, sans-serif;
+    text-shadow:1vh 1vh 1vh rgb(9, 9, 9) ;
+}
+
+
+.cornerItems2{
+    text-align: right;
+    position: absolute;
+    top:147%;
+    right:30%;
+    width: 80vh;
+  
+}
+
+.f{
+    color: #f2f2f2;
+}
+
+.gitHubIcon{
+   
+    position: absolute;
+    top: 145vh;
+    left: 140vh;
+}
+
+img{
+    width: 5vh;
+}
