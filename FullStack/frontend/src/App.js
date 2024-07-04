@@ -1,17 +1,23 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import Home from './pages/Home'
-import Navbar from './components/Navbar';
+import Home from './pages/home'
+import Navbar from './compoments/navbar'
+import Add from './pages/add';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar/>
         <div className="pages">
+          <Navbar/>
           <Routes>
             <Route
-              path='/'
+              path="/"
               element={<Home/>}
+            />
+
+            <Route
+              path='/add'
+              element={<Add/>}
             />
           </Routes>
         </div>

@@ -1,5 +1,4 @@
-const mongoose =  require('mongoose')
-
+const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const personSchema = new Schema({
@@ -7,12 +6,10 @@ const personSchema = new Schema({
         type: String,
         required: true
     },
-
     age:{
         type: Number,
         required: true
     }
-    
 })
 
 module.exports = mongoose.model('Person', personSchema)
