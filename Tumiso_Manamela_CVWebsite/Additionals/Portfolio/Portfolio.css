@@ -1,0 +1,291 @@
+/*navbar*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar{
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding-right: 8vh;
+}
+
+a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 1.9vh;
+}
+
+#links{
+    display: flex;
+    justify-content: space-between;
+    gap: 5vh;
+    /* margin-right: 3.4vh; */
+}
+
+.portfolioL{
+    color: #78bbeb;
+}
+
+.name{
+    padding-left: 8vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.9vh;
+
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+html{
+    scrollbar-width: none;
+    overflow-x: hidden;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f2f2f2;
+}
+
+/*-------- background lines -----------*/
+
+.blueLine1{
+    position: absolute;
+    background: #78bbeb;
+    width: 25vh;
+    height: 80vh;
+    transform: rotate(26deg);
+    left: 50vh;
+    top:20vh;
+    animation: upAnimation 3s ease-in-out;
+}
+
+.blueLine2{
+    position: absolute;
+    background: #4193ce;
+    width: 59vh;
+    height: 250vh;
+    transform: rotate(72deg);
+    left: 58vh;
+    top:-31vh;
+    animation: downAnimation 2s ease-in-out;
+}
+
+.blueLine3{
+    position: absolute;
+    background: #78bbeb;
+    width: 58vh;
+    height: 60vh;
+    transform: rotate(-15deg);
+    left: 142vh;
+    top:90vh;
+    animation: up2 2s ease-in-out;
+}
+
+.decoLines{
+    z-index: 1;
+}
+
+
+/* animations */
+@keyframes fromtop{
+    from{
+        transform: translateY(-50px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes opacitying{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes changeColor{
+    from{
+        background: rgb(255, 255, 255, 0);
+    }
+    to{
+        background: rgb(168, 216, 236, 0.2);
+    }
+}
+
+@keyframes upAnimation{
+    from{
+        transform: translate(-80px, 180px) rotate(26deg);
+    }
+
+    to{
+        transform: translate(0) rotate(26deg);
+    }
+}
+
+@keyframes downAnimation{
+    from{ 
+        transform: translate(-200px, 55px) rotate(72deg);
+    }
+    to{
+        transform: translate(0) rotate(72deg);
+    }
+}
+
+@keyframes up2{
+    from{
+        transform: translate(40px, 180px) rotate(-15deg);
+    }
+    to{
+        transform: translate(0) rotate(-15deg);
+    }
+}
+
+
+/* organizing */
+
+/* .footer{
+    position: absolute;
+    background: #347db2;
+    width: 100vw;
+    height: 30vh;
+    top:134vh;
+    overflow-y: hidden;
+} */
+
+.heading{
+    float: none;
+    display: flex;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4vh;
+}
+
+.main{
+    display: flex;
+}
+
+.lineOne{
+    height: 50%;
+    display: flex;
+    gap: 4vw;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    z-index: 2;
+    animation: opacitying 2s ease-in;
+}
+
+.itemsWrap{
+    display: flex;
+    width: 80%;
+    gap: 2vw;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 8vh;
+}
+
+
+#milestoneContainer{
+    background:rgb(255, 255, 255, 0);
+    position: absolute;
+    top: 24vh;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    gap: 3vh;
+    animation: opacitying 2s ease-in;
+    
+}
+
+
+#milestoneContainer2{
+    background:rgb(255, 255, 255, 0);
+    position: absolute;
+    top: 75vh;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    gap: 3vh;
+    animation: opacitying 2s ease-in;
+    
+}
+
+.card:hover{
+    /* animation: changeColor 0.5s ease-in; */
+    background: rgba(114, 213, 255, 0.429);
+}
+
+.card{
+    
+    background: rgb(255, 255, 255, 0);
+    width: 50vh;
+    height: 50vh;
+    /* border-radius: 10%; */
+}
+
+.videoSlot{
+    position: relative;
+    left:10% ;
+    top: 10%;
+    width: 80%;
+    height: 50%;
+    background: rgb(255, 255, 255, 0);
+}
+
+.milestoneName{
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    font-size: 3vh;
+    font-family:Arial, sans-serif;
+    text-shadow: 1vh 1vh 1vh rgb(142, 142, 142);
+}
+
+.projectDetails{
+    position: relative;
+    top: 9%;
+    left: 10%;
+    width: 80%;
+    font-size: 1.5vh;
+    font-family:Arial, sans-serif;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #347db2;
+    height: 15vh;
+    margin-top: 1vh;
+    gap: 8vh;
+}
+
+.gitHubIcon{
+
+}
+
+img{
+    width: 5vh;
+}
+
+.f{
+    color: white;
+}

@@ -1,0 +1,225 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+}
+
+.name{
+    padding-left: 8vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.9vh;
+
+}
+
+
+#navbar{
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding-right: 8vh;
+}
+
+p{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 1.9vh;
+}
+
+#maintext{
+    background-color: #f2f2f2;
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainP{
+    background-color: #f2f2f2;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: -100px;
+}
+
+.TM{
+    position: relative;
+    font-size: 8vh;
+    margin-left: 10vw;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: opacitying 2s ease-in, fromLeft 2s ease-in-out;
+}
+
+.TMP{
+    position: relative;
+    margin-bottom: 10vh;
+    margin-top: -8vh;
+    left: 11vw;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    animation: opacitying 2s ease-in, fromBottom 2s ease-in-out;
+}
+
+#CVDownload{
+    position: relative;
+    left: 38vw;
+    bottom: 5%;
+    color: #4193ce;
+    font-size: 1.7vh;
+    font-family: Arial, sans-serif;
+    animation: opacitying 2s ease-in;
+    /* position: absolute;
+    color: #78bbeb;
+    top: 65vh;
+    left: 74vh;
+    font-size: 1.7vh;
+    font-family: Arial, sans-serif;
+    animation: opacitying 2s ease-in; */
+}
+
+.main{
+    background-color: #f2f2f2;
+    flex-grow: 10;
+    display: flex;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f2f2f2;
+}
+
+
+#links{
+    display: flex;
+    justify-content: space-between;
+    gap: 5vh;
+}
+
+.homeL{
+    color: #78bbeb;
+}
+
+img{
+    position: absolute;
+    width: 24vh;
+    overflow: hidden;
+    left:65%;
+    top:33%;
+    animation: opacitying 3s ease-in;
+    /* left:140vh;
+    top:30vh; */
+}
+
+/*Spheres*/
+
+#c1{
+    position: absolute;
+    top:41%;
+    left:53%;
+    height: 42vh;
+    width: 42vh;
+    background-color: #78bbeb;
+    border-radius: 50%;
+    animation: grow 4s ease-in-out infinite alternate, opacitying 2s ease-in;
+}
+
+#c2{
+    position: absolute;
+    top:32%;
+    left:68%;
+    height: 56vh;
+    width: 56vh;
+    background-color: #4193ce;
+    border-radius: 50%;
+    animation: grow 3s ease-in-out infinite alternate, opacitying 2s ease-in;
+}
+
+#c3{
+    position: absolute;
+    top:20%;
+    left:62%;
+    height: 34vh;
+    width: 34vh;
+    background-color: #347db2;
+    border-radius: 50%;
+    animation: grow3 2s ease-in-out infinite alternate, opacitying 2s ease-in;
+}
+
+/*animations*/
+@keyframes headerAnimations{
+    from{
+        transform: translateY(-50px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes opacitying{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fromLeft{
+    from{
+        transform: translateX(-150px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes fromBottom{
+    from{
+        transform: translateY(50px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes grow{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
+@keyframes grow2{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
+
+@keyframes grow3{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
