@@ -1,0 +1,285 @@
+/*navbar*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar{
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding-right: 8vh;
+}
+
+a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 1.9vh;
+}
+
+#links{
+    display: flex;
+    justify-content: space-between;
+    gap: 5vh;
+    /* margin-right: 3.4vh; */
+}
+
+.aboutL{
+    color: #78bbeb;
+}
+
+.name{
+    padding-left: 8vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.9vh;
+
+}
+
+body, html {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f2f2f2;
+}
+
+/*organizing*/
+.main{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+
+.canvas{
+    width: 50%;
+    z-index: 1;
+}
+
+.abtC{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 4vh;
+    font-family:Arial, sans-serif;
+    animation: opacitying 2s ease-in;
+}
+
+.skllC{
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 5vh;
+    margin-bottom: 1vh;
+    font-family:Arial, sans-serif;
+    animation: fromBottom 2s ease-in-out, opacitying 2s ease-in;
+}
+
+.aboutMeContainer{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+p{
+    margin-top: -2vh;
+}
+
+.details{
+    width: 50%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 8vh;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+}
+
+.heading{
+    float: none;
+    display: flex;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4vh;
+}
+
+
+.icons{
+    display: flex;
+    gap: 2vh;
+    animation: fromLeft 2s ease-in-out, opacitying 2s ease-in;
+}
+
+img{
+    width: 7vh;
+}
+
+/*deco*/
+
+/*Shapes*/
+.t1{
+    position: absolute;
+    top: 33vh;
+    left: -6vh;
+    width: 0;
+    height: 0;
+    border-left: 40vh solid transparent;
+    border-right: 40vh solid transparent;
+    border-bottom: 60vh solid #78bbeb;
+    transform: rotate(180deg);
+    animation: opacitying 2s ease-in;
+}
+
+.t2{
+    position: absolute;
+    top: 43vh;
+    left: 26vh;
+    width: 0;
+    height: 0;
+    border-left: 50vh solid transparent;
+    border-right: 50vh solid transparent;
+    border-bottom: 90vh solid #4193ce;
+    transform: rotate(152deg);
+    animation: triangleRoll 3s ease-in-out, opacitying 3s ease-in;
+    
+}
+
+.t3{
+    position: absolute;
+    top: 65vh;
+    left: 46vh;
+    width: 0;
+    height: 0;
+    border-left: 15vh solid transparent;
+    border-right: 15vh solid transparent;
+    border-bottom: 25vh solid #78bbeb;
+    transform: rotate(130deg);
+    animation: triangleRollBottom 4s ease-in-out, opacitying 4s ease-in;
+    
+
+}
+
+.t4{
+    position: absolute;
+    top: 13vh;
+    left: 5vh;
+    width: 0;
+    height: 0;
+    border-left: 15vh solid transparent;
+    border-right: 15vh solid transparent;
+    border-bottom: 28vh solid #4193ce;
+    transform: rotate(-48deg);  
+    animation: triangleRoll 2s ease-in-out, opacitying 2s ease-in;
+    
+
+}
+
+/*paras*/
+
+
+
+
+
+
+@keyframes triangleRoll{
+    from{
+        transform: translateY(-100px) rotate(-270deg);
+    }
+    to{
+        transform: translateY(0) (0deg);
+    }
+    
+}
+
+@keyframes triangleRollLeft{
+    from{
+        transform: translateX(-100px) rotate(270deg);
+    }
+    to{
+        transform: translateX(0) (0deg);
+    }
+    
+}
+
+@keyframes triangleRollBottom{
+    from{
+        transform: translateY(100px) rotate(270deg);
+    }
+    to{
+        transform: translateY(0) (0deg);
+    }
+    
+}
+
+
+@keyframes headerAnimations{
+    from{
+        transform: translateY(-50px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes fromLeft{
+    from{
+        transform: translateX(-150px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes fromBottom{
+    from{
+        transform: translateY(50px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes grow{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
+
+@keyframes fromRight{
+    from{
+        transform: translateX(150px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes opacitying{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
